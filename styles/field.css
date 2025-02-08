@@ -1,0 +1,40 @@
+#choice-chang {
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+table {
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+table td {
+    height: 10px;
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+}
+
+table button {
+    width: 18px;
+    height: 18px;
+    font-size: 0pt;
+    border: 0px;
+    display: block;
+}
+
+.line {
+    background-color: rgb(160, 160, 160);
+}
+
+.normal {
+    background-color: rgb(77, 139, 75);
+}
+
+.ball {
+    background-color: rgb(44, 71, 43);
+}
+
+.player {
+    background-color: rgb(234, 234, 234);
+}
