@@ -21,3 +21,26 @@ h2 {
 a {
     color: #b0c4de;
 }
+
+#score {
+    color: rgb(181, 181, 181);
+}
+
+#home button {
+    margin-top: 40px;
+    width: 160px;
+    height: 40px;
+    border-radius: 20px;
+    border-width: 0px;
+    text-align: center;
+    background-color: #496650;
+    font-size: 12pt;
+    color: rgb(226, 226, 226);
+}
+
+#home button:hover {
+    width: 180px;
+    height: 40px;
+    font-size: 14pt;
+    transition-duration: 0.5s;
+}
