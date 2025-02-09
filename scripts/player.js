@@ -204,7 +204,7 @@ function pause(who) {
 
 // 遊戲結束機制
 function stop(who) {
-    document.getElementById('score').innerHTML = `<a style="color: red;">恭喜玩家 ${who} 獲得勝利！</a>`;
+    document.getElementById('score').innerHTML = `<a style="color: red;">恭喜${who == '2' ? mode?'玩家2':'電腦' : '玩家1'} 獲得勝利！</a>`;
     setTimeout(() => document.getElementById('choice-chang').remove(), 1000);
 }
 
