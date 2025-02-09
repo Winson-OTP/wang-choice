@@ -166,7 +166,11 @@ function fly(toWho, rot = 0) {
     bPos[1] += toWho;
     if (rot!=0 && movement%Math.abs(rot)==0) bPos[0] += rot/Math.abs(rot);
     update();
-    if ((bPos[1] == eval(`p${toWho==1?"2":"1"}Pos[1]`)-toWho && eval(`bigger${toWho==1?"2":"1"}`) == true) || bPos[1] == 13 || bPos[1] == -13 || bPos[0] == 1 || bPos[0] == 20) {
+    if ((bPos[1] == eval(`p${toWho==1?"2":"1"}Pos[1]`)-toWho && eval(`bigger${toWho==1?"2":"1"}`) == true) &&
+        (bPos[0] == eval(`p${toWho==1?"2":"1"}Pos[0]+0.5`)||bPos[0] == eval(`p${toWho==1?"2":"1"}Pos[0]-0.5`)||
+        bPos[0] == eval(`p${toWho==1?"2":"1"}Pos[0]+1.5`)||bPos[0] == eval(`p${toWho==1?"2":"1"}Pos[0]-1.5`))
+        || 
+    bPos[1] == 13 || bPos[1] == -13 || bPos[0] == 1 || bPos[0] == 20) {
         if (bPos[1] == eval(`p${toWho==1?"2":"1"}Pos[1]`)-toWho) {
             rotate = ((Math.floor(Math.random()*2)==1)?-1:1) * (Math.floor(Math.random()*4)+3);
             setTimeout(() => ballfly(-toWho), 100);
